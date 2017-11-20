@@ -1,0 +1,20 @@
+{
+    "name": "roberteliason/wp_pig",
+    "description": "Procedural Image Generator for WordPress",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Robert Eliason",
+            "email": "robert@pardalis.se"
+        }
+    ],
+    "repositories": [
+      {
+        "type": "git",
+        "url": "https://github.com/roberteliason/pig.git"
+      }
+    ],
+    "require": {
+      "roberteliason/pig": "dev-develop"
+    }
+}

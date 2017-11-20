@@ -1,0 +1,22 @@
+[
+    {
+        "name": "roberteliason/pig",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/roberteliason/pig.git",
+            "reference": "3280e862b4e583eccb20d24de285d4d5e6393aac"
+        },
+        "time": "2017-11-19T14:20:35+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "authors": [
+            {
+                "name": "Robert Eliason",
+                "email": "robert@pardalis.se"
+            }
+        ],
+        "description": "Procedural Image Generator for PHP"
+    }
+]

@@ -1,0 +1,38 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4317b90643518b9466887425ebef664d",
+    "packages": [
+        {
+            "name": "roberteliason/pig",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roberteliason/pig.git",
+                "reference": "3280e862b4e583eccb20d24de285d4d5e6393aac"
+            },
+            "type": "library",
+            "authors": [
+                {
+                    "name": "Robert Eliason",
+                    "email": "robert@pardalis.se"
+                }
+            ],
+            "description": "Procedural Image Generator for PHP",
+            "time": "2017-11-19 14:20:35"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "roberteliason/pig": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
