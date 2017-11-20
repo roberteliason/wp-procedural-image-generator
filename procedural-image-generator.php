@@ -16,8 +16,18 @@ include_once( plugin_dir_path( __FILE__ ) . 'vendor/autoload.php' );
 include_once( plugin_dir_path( __FILE__ ) . 'vendor/roberteliason/pig/autoload.php' );
 
 
+/**
+ * On post save, generate the post image based on post content
+ *
+ * @param $post_id
+ */
 function wp_pig_generate_post_image( $post_id ) {
 	$post       = get_post( $post_id );
+
+	if ( 'revision' == $post->post_type ) {
+		return;
+	}
+
 	$upload_dir = wp_upload_dir();
 	$colors     = [
 		'rgba(255,220,190,0.15)',
@@ -29,7 +39,7 @@ function wp_pig_generate_post_image( $post_id ) {
 	];
 
 	$ThePIG = New PIG_Space\Generators\Logo_PIG(
-		$post->post_content,
+		$post->post_title . $post->post_content,
 		$colors,
 		'transparent',
 		55, 35, 25, 4200
